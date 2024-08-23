@@ -1,6 +1,6 @@
 // gmail.js
 const { google } = require("googleapis");
-const { getAccessToken, oauth2Client } = require("./auth");
+const { getAccessToken, oauth2Client } = require("./services/auth");
 
 const gmail = google.gmail("v1");
 

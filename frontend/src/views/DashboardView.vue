@@ -1,3 +1,4 @@
+<!-- views/DashboardView.vue -->
 <template>
     <Dashboard />
 </template>

@@ -1,3 +1,4 @@
+<!-- components/Login.vue -->
 <template>
     <div class="login-container">
         <h2>Login</h2>
@@ -12,7 +13,7 @@
             </div>
             <button type="submit">Login</button>
         </form>
-        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div @click="onSignIn()" class="g-signin2" data-onsuccess="onSignIn"></div>
     </div>
 </template>
 
@@ -84,5 +85,6 @@ export default {
 
 .g-signin2 {
     margin-top: 20px;
+    
 }
 </style>

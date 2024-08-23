@@ -1,3 +1,4 @@
+// model/Email.js
 const mongoose = require("mongoose");
 
 const emailSchema = new mongoose.Schema({

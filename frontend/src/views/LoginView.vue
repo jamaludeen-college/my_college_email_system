@@ -1,3 +1,4 @@
+<!-- views/LoginView.vue -->
 <template>
     <Login />
 </template>

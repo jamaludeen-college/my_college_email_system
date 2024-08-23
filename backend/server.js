@@ -2,7 +2,7 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const { google } = require("googleapis");
-const { getAccessToken, oauth2Client } = require("./auth");
+const { getAccessToken, oauth2Client } = require("./services/auth");
 
 dotenv.config();
 

@@ -1,3 +1,4 @@
+<!-- components/EmailList.vue -->
 <template>
     <v-container>
         <v-row>
