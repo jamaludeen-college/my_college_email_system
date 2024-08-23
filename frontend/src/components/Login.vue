@@ -9,11 +9,11 @@
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" v-model="password" required />
+                <input type="password" v-model="password" required placeholder="password" />
             </div>
             <button type="submit">Login</button>
         </form>
-        <div @click="onSignIn()" class="g-signin2" data-onsuccess="onSignIn"></div>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
     </div>
 </template>
 
@@ -65,7 +65,16 @@ export default {
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    background-size: cover;
+    background-position: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .form-group {
@@ -75,16 +84,33 @@ export default {
 .form-group label {
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
 }
 
 .form-group input {
     width: 100%;
-    padding: 8px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 .g-signin2 {
     margin-top: 20px;
-    
 }
 </style>
